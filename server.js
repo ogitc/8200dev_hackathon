@@ -17,6 +17,10 @@ app.get('/isPrime/:number', function(req, res){
     res.status(200).send(primes.isPrime(req.params.number));    
 })
 
+app.get('/Sqrt/:number', function(req, res){
+    res.status(200).send(sqrt.findSqrt(req.params.number));    
+})
+
 exports.stop = function(){
     server.close();
 }
