@@ -4,6 +4,7 @@ const app = express();
 const port = 3000;
 const primes = require('./primes.js');
 const fs = require('fs');
+const sqrt = require('./sqrt.py');
 
 app.get('/', function(req, res){
 	fs.readFile('index.html', function(err, data) {
@@ -18,7 +19,7 @@ app.get('/isPrime/:number', function(req, res){
 })
 
 app.get('/Sqrt/:number', function(req, res){
-    res.status(200).send(sqrt.findSqrt(req.params.number));    
+    res.status(200).send(sqrt.find_sqrt(req.params.number));    
 })
 
 exports.stop = function(){
