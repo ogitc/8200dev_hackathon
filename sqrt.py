@@ -1,6 +1,6 @@
 import math
 
 
-def sqrt(num):
+def find_sqrt(num):
     return math.sqrt(num)
 
