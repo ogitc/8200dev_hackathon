@@ -19,7 +19,7 @@ app.get('/isPrime/:number', function(req, res){
 })
 
 app.get('/Sqrt/:number', function(req, res){
-    res.status(200).send(sqrt.find_sqrt(req.params.number));    
+    res.status(200).send(sqrt.findSqrt(req.params.number));    
 })
 
 exports.stop = function(){
